@@ -19,6 +19,19 @@ void input()
 			break;
 
 	}
+
+
+	cout << "\n================================\n";
+	cout << "Enter Array Elements : \n";
+	cout << "\n================================\n";
+
+	for (int i = 0; i < length; i++) 
+	{
+
+		cout << "Index : " << i + 1 << endl;
+		cin >> element[i];
+
+	}
 }
 int main()
 {
