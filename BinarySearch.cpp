@@ -127,6 +127,7 @@ int main()
 {
 
 	input();
-	
+    bubblesortArray();
+
 	return 0;
 }
