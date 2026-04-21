@@ -65,7 +65,18 @@ void bubblesortArray()
 
     } while (pass <= length - 1); // step 5: continue until all passes are done
 }
+void display() 
+{
+    cout << "\n================================\n";
+    cout << "Sorted Array Elements (Asc) : \n";
+    cout << "\n================================\n";
 
+    for (int j=0;j<length;j++)
+    {
+        cout << element[j] << "  ";
+    }
+    cout << endl;
+}
 
 int main()
 {
