@@ -129,5 +129,6 @@ int main()
 	input();
     bubblesortArray();
     display();
+    binarySearch();
 	return 0;
 }
