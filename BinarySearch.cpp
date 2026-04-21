@@ -128,6 +128,6 @@ int main()
 
 	input();
     bubblesortArray();
-
+    display();
 	return 0;
 }
