@@ -33,6 +33,40 @@ void input()
 
 	}
 }
+void bubblesortArray()
+{
+    // Procedure to sort the array using bubble sort method
+    int pass = 1; // step 1
+
+    do
+    {
+        for (int j = 0; j <= length - 1 - pass; j++)
+        {
+            // step 2: compare adjacent elements
+            if (element[j] > element[j + 1])
+            {
+                // step 3: swap if out of order
+                int temp;
+                temp = element[j];
+                element[j] = element[j + 1];
+                element[j + 1] = temp;
+            }
+        }
+
+        pass += 1; // step 4: increment pass counter
+
+        // Display the array after each pass
+        cout << "Pass " << pass - 1 << ": "; // Number of pass
+        for (int k = 0; k < length; k++)
+        {
+            cout << element[k] << " "; // Display data for this pass
+        }
+        cout << endl;
+
+    } while (pass <= length - 1); // step 5: continue until all passes are done
+}
+
+
 int main()
 {
 
