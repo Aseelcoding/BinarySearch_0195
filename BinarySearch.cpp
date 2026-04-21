@@ -125,7 +125,7 @@ void binarySearch()
 }
 int main()
 {
-
+    cout << " Program To Search using binary Search\n\n";
 	input();
     bubblesortArray();
     display();
