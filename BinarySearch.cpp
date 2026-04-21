@@ -1,8 +1,6 @@
 
 #include <iostream>
 using namespace std;
-
-
 int element[10];
 int length;
 int x;
@@ -77,7 +75,54 @@ void display()
     }
     cout << endl;
 }
+void binarySearch() 
+{
+    char repeat;
 
+    do
+    {
+        int low = 0;
+        int high = length - 1;
+        int mid;
+        bool found = false;
+
+        cout << "\n Binary Search  \n";
+        cout << "================================\n";
+        cout << "Enter the element to search : ";
+        cin >> x;
+
+        do {
+
+            mid = (low + high) / 2;
+
+            if (element[mid] == x)
+            {
+                cout << " Element  " << x << " found at index " << mid << endl;
+                return;
+            }
+
+            if (x < element[mid])
+            {
+                high = mid - 1;
+            }
+
+            if (x > element[mid])
+            {
+                low = mid + 1;
+            }
+        } while (low <= high);
+
+        if (low > high)
+            cout << "\n [x] Eelement " << x << " not found in array.\n";
+
+
+        cout << "Search again (y/n) : ";
+        cin >> repeat;
+
+    
+    } while (repeat == 'y' || repeat == 'Y');
+
+}
 int main()
 {
 
